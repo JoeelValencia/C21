@@ -84,10 +84,18 @@ body {
     line-height: 1;
 }
 .c21-top {
-    font-size: 0.55rem;
+    font-size: 0.65rem;
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     color: var(--gold);
+    line-height: 1.2;
+}
+.c21-sub {
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgba(212,175,55,0.7);
+    line-height: 1.2;
 }
 .c21-bottom {
     font-size: 1.4rem;
@@ -460,6 +468,72 @@ body {
     transform: translateX(4px);
 }
 .social-btn.wpp:hover { border-color: rgba(37,211,102,0.3); color: #25D366; }
+
+/* Asesores */
+.footer-asesores {
+    border-top: 1px solid var(--card-border);
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+}
+.footer-asesores h4 {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+}
+.asesores-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.asesor-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background: rgba(255,255,255,0.025);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--text-main);
+    transition: all 0.3s ease;
+}
+.asesor-card:hover {
+    background: rgba(37,211,102,0.05);
+    border-color: rgba(37,211,102,0.25);
+    transform: translateX(4px);
+}
+.asesor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.asesor-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+.asesor-phone {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+.asesor-wpp {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(37,211,102,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+.asesor-card:hover .asesor-wpp {
+    background: rgba(37,211,102,0.2);
+    transform: scale(1.1);
+}
 
 .footer-bottom {
     border-top: 1px solid var(--card-border);
